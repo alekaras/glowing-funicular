@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitris's Honey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff8e1;
+        }
+
+        header {
+            background-color: #ffcc80;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #d48806;
+        }
+
+        footer {
+            background-color: #ffcc80;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form label, form input, form textarea, form button {
+            margin-bottom: 10px;
+        }
+
+        form input, form textarea {
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #d48806;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dimitris's Honey</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Pure Honey from Our Bees to Your Table</h2>
+        <p>Discover the natural taste of premium honey, produced with care by our dedicated beekeeper, Dimitris.</p>
+        <img src="honey.jpg" alt="Delicious Honey">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Dimitris has been passionately beekeeping for over a decade, ensuring that every jar of honey is of the highest quality.</p>
+        <img src="beekeeper.jpg" alt="Beekeeper Dimitris">
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="honey-jar.jpg" alt="Honey Jar">
+            <h3>Pure Honey Jar</h3>
+            <p>500g of raw, natural honey.</p>
+        </div>
+        <!-- More products can be added here -->
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="bee.jpg" alt="Bee on a flower">
+        <img src="hives.jpg" alt="Beehives">
+        <!-- More images can be added here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: contact@dimitrishoney.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dimitris's Honey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
